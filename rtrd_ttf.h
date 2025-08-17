@@ -144,7 +144,6 @@ void rtrd_draw_text_default(const char * text,float x, float y , mat4x4 * mvp)
     glBufferSubData(GL_ARRAY_BUFFER,0,textbuffersize ,rtrd_render_buffer); 
 
     glBindBuffer(GL_ARRAY_BUFFER,0); 
-    glEnable(GL_TEXTURE_2D);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
